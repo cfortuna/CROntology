@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY SpectrumSensingExperimentSpecification "http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#"
+     xml:base="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl"
+     xmlns:SpectrumSensingExperimentSpecification="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl">
+        <rdfs:comment>The Spectrum Sensing Experiment Specification ontology describes all aspects of configuring and running a spectrum sensing experiment. The ontology is based on the CREW Common data Format.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#centerFrequencyOf -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;centerFrequencyOf">
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;CenterFrequency"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyChannel"/>
+        <owl:inverseOf rdf:resource="&SpectrumSensingExperimentSpecification;hasCenterFrequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#endsAt -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;endsAt">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;SpectrumSweep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasBandwidth -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;hasBandwidth">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;Bandwidth"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyChannel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasCenterFrequency -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;hasCenterFrequency">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;CenterFrequency"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyChannel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#isPartiallyDefinedBy -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;isPartiallyDefinedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
+        <owl:inverseOf rdf:resource="&SpectrumSensingExperimentSpecification;partiallyDefines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#isSplitIn -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;isSplitIn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequencySpectrum"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#partiallyDefines -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;partiallyDefines">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;CenterFrequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#runs -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;runs">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;Device"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
+        <owl:inverseOf rdf:resource="&SpectrumSensingExperimentSpecification;runsOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#runsOn -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;runsOn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;Device"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#startsAt -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;startsAt">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;SpectrumSweep"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#steps -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;steps">
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;NumberOfFrequencySteps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#sweeps -->
+
+    <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;sweeps">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;Device"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+        <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequencySpectrum"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;SpectrumSweep"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="&SpectrumSensingExperimentSpecification;hasDescription">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;Device"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#version -->
+
+    <owl:DatatypeProperty rdf:about="&SpectrumSensingExperimentSpecification;version">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Application -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Application">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
+        <rdfs:comment rdf:resource="http://www.iwi-iuk.org/material/RDF/1.1/Schema/Class/swt#Application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#BBFrequencyBand -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;BBFrequencyBand">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Bandwidth -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Bandwidth"/>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#CenterFrequency -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;CenterFrequency">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Device -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Device">
+        <owl:disjointWith rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
+        <owl:disjointWith rdf:resource="&SpectrumSensingExperimentSpecification;TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#DeviceSoftware -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;DeviceSoftware">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
+        <rdfs:comment rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#DeviceSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Driver -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Driver">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#DwellTime -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;DwellTime">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#ElectromagneticSpectrum -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;ElectromagneticSpectrum"/>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#EndFrequency -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;EndFrequency">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencyBand -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencyChannel -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;FrequencyChannel"/>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencyStep -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;FrequencyStep">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Gain -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Gain">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#InstantaneousBandwidth -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;InstantaneousBandwidth">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Bandwidth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#NumberOfFrequencySteps -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;NumberOfFrequencySteps">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#OperatingSystem -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;OperatingSystem">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
+        <rdfs:comment rdf:resource="http://www.w3.org/2007/uwa/context/software.owl#OperatingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Parameter -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Parameter">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;TemporalEntity"/>
+        <rdfs:comment rdf:resource="http://mged.sourceforge.net/ontologies/MGEDOntology.daml#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RFFrequencyBand -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;RFFrequencyBand">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioFrequency -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;RadioFrequency">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioFrequencySpectrum -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;RadioFrequencySpectrum">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;ElectromagneticSpectrum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SamplingRate -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;SamplingRate">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Software -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Software">
+        <owl:disjointWith rdf:resource="&SpectrumSensingExperimentSpecification;TemporalEntity"/>
+        <rdfs:comment rdf:resource="http://xam.de/ns/os/opensource.rdfs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SoftwareDescription -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;SoftwareDescription">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SpectrumSweep -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;SpectrumSweep">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#StartFrequency -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;StartFrequency">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#TemporalEntity -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;TemporalEntity">
+        <rdfs:comment rdf:resource="http://www.w3.org/2006/time.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#VariableBandwidth -->
+
+    <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;VariableBandwidth">
+        <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Bandwidth"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&SpectrumSensingExperimentSpecification;Application"/>
+            <rdf:Description rdf:about="&SpectrumSensingExperimentSpecification;Driver"/>
+            <rdf:Description rdf:about="&SpectrumSensingExperimentSpecification;OperatingSystem"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
