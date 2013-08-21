@@ -6,18 +6,18 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY SpectrumSensingExperimentSpecification "http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#" >
+    <!ENTITY SpectrumSensingExperimentSpecification "http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#"
-     xml:base="http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl"
+<rdf:RDF xmlns="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#"
+     xml:base="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:SpectrumSensingExperimentSpecification="http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#"
+     xmlns:SpectrumSensingExperimentSpecification="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl">
+    <owl:Ontology rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl">
         <rdfs:comment>The Spectrum Sensing Experiment Specification ontology describes all aspects of configuring and running a spectrum sensing experiment. The ontology is based on the CREW Common data Format.</rdfs:comment>
     </owl:Ontology>
     
@@ -34,7 +34,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#centerFrequencyOf -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#centerFrequencyOf -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;centerFrequencyOf">
         <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;CenterFrequency"/>
@@ -44,7 +44,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#endsAt -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#endsAt -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;endsAt">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -55,7 +55,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#hasBandwidth -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasBandwidth -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;hasBandwidth">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -65,7 +65,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#hasCenterFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasCenterFrequency -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;hasCenterFrequency">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -75,7 +75,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#isPartiallyDefinedBy -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#isPartiallyDefinedBy -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;isPartiallyDefinedBy">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -85,7 +85,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#isSplitIn -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#isSplitIn -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;isSplitIn">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -95,7 +95,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#partiallyDefines -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#partiallyDefines -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;partiallyDefines">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -104,7 +104,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#runs -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#runs -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;runs">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -115,7 +115,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#runsOn -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#runsOn -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;runsOn">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -125,7 +125,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#startsAt -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#startsAt -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;startsAt">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -136,7 +136,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#steps -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#steps -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;steps">
         <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;NumberOfFrequencySteps"/>
@@ -144,7 +144,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#sweeps -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#sweeps -->
 
     <owl:ObjectProperty rdf:about="&SpectrumSensingExperimentSpecification;sweeps">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -189,7 +189,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#hasDescription -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasDescription -->
 
     <owl:DatatypeProperty rdf:about="&SpectrumSensingExperimentSpecification;hasDescription">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -199,7 +199,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#version -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#version -->
 
     <owl:DatatypeProperty rdf:about="&SpectrumSensingExperimentSpecification;version">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -220,7 +220,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#AntennaFrequencyBand -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#AntennaFrequencyBand -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
@@ -228,7 +228,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Application -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Application -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Application">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
@@ -237,13 +237,13 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Bandwidth -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Bandwidth -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Bandwidth"/>
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#BaseBandFrequencyBand -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#BaseBandFrequencyBand -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
@@ -251,7 +251,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#CenterFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#CenterFrequency -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;CenterFrequency">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
@@ -259,7 +259,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Device -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Device -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Device">
         <owl:disjointWith rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
@@ -267,7 +267,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#DeviceSoftware -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#DeviceSoftware -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;DeviceSoftware">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
@@ -276,7 +276,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Driver -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Driver -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Driver">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
@@ -284,7 +284,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#DwellTime -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#DwellTime -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;DwellTime">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
@@ -292,13 +292,13 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#ElectromagneticSpectrum -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#ElectromagneticSpectrum -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;ElectromagneticSpectrum"/>
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#EndFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#EndFrequency -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;EndFrequency">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
@@ -306,19 +306,19 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#FrequencyBand -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencyBand -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#FrequencyChannel -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencyChannel -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;FrequencyChannel"/>
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#FrequencyStep -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencyStep -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;FrequencyStep">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
@@ -326,7 +326,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Gain -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Gain -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Gain">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
@@ -334,7 +334,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#InputFilterBandwidth -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#InputFilterBandwidth -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;InputFilterBandwidth">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Bandwidth"/>
@@ -343,7 +343,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#NumberOfFrequencySteps -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#NumberOfFrequencySteps -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;NumberOfFrequencySteps">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
@@ -351,7 +351,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#OperatingSystem -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#OperatingSystem -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;OperatingSystem">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;DeviceSoftware"/>
@@ -360,13 +360,13 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#RadioFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioFrequency -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#RadioFrequencySpectrum -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioFrequencySpectrum -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;RadioFrequencySpectrum">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;ElectromagneticSpectrum"/>
@@ -374,7 +374,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#SamplingRate -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SamplingRate -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;SamplingRate">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
@@ -382,7 +382,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Setting -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Setting -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Setting">
         <rdfs:comment rdf:resource="http://mged.sourceforge.net/ontologies/MGEDOntology.daml#Parameter"/>
@@ -390,7 +390,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#Software -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#Software -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;Software">
         <rdfs:comment rdf:resource="http://xam.de/ns/os/opensource.rdfs"/>
@@ -398,7 +398,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#SoftwareDescription -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SoftwareDescription -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;SoftwareDescription">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Software"/>
@@ -406,7 +406,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#SpectrumSweep -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SpectrumSweep -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;SpectrumSweep">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
@@ -414,7 +414,7 @@
     
 
 
-    <!-- http://sensorlab.ijs.si/2013/v3/SpectrumSensingExperimentSpecification.owl#StartFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#StartFrequency -->
 
     <owl:Class rdf:about="&SpectrumSensingExperimentSpecification;StartFrequency">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
