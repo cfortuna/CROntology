@@ -156,24 +156,24 @@
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#hasSetting -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasSetting -->
 
-    <owl:ObjectProperty rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#hasSetting">
+    <owl:ObjectProperty rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#hasSetting">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:domain rdf:resource="&SpectrumSensingExperimentSpecification;Device"/>
         <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
-        <rdfs:range rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#FrequencySetting"/>
-        <rdfs:domain rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#RadioDevice"/>
+        <rdfs:range rdf:resource="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencySetting"/>
+        <rdfs:domain rdf:resource="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioDevice"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application/x-turtle#operatesIn -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#operatesIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application/x-turtle#operatesIn">
+    <owl:ObjectProperty rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#operatesIn">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:range rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
-        <rdfs:domain rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#RadioDevice"/>
+        <rdfs:domain rdf:resource="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioDevice"/>
     </owl:ObjectProperty>
     
 
@@ -422,42 +422,42 @@
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#CarrierFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#CarrierFrequency -->
 
-    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#CarrierFrequency">
-        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#FrequencySetting"/>
+    <owl:Class rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#CarrierFrequency">
+        <rdfs:subClassOf rdf:resource="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencySetting"/>
     </owl:Class>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#FrequencySetting -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencySetting -->
 
-    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#FrequencySetting">
+    <owl:Class rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencySetting">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;RadioFrequency"/>
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
     </owl:Class>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IntermediateFrequency -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#IntermediateFrequency -->
 
-    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IntermediateFrequency">
-        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#FrequencySetting"/>
+    <owl:Class rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#IntermediateFrequency">
+        <rdfs:subClassOf rdf:resource="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#FrequencySetting"/>
     </owl:Class>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IntermediateFrequencyBand -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#IntermediateFrequencyBand -->
 
-    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IntermediateFrequencyBand">
+    <owl:Class rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#IntermediateFrequencyBand">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyBand"/>
     </owl:Class>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#RadioDevice -->
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioDevice -->
 
-    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#RadioDevice">
+    <owl:Class rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#RadioDevice">
         <rdfs:subClassOf rdf:resource="&SpectrumSensingExperimentSpecification;Device"/>
     </owl:Class>
     
