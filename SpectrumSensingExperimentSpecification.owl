@@ -5,6 +5,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY om-1 "http://www.wurvoc.org/vocabularies/om-1.8/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY SpectrumSensingExperimentSpecification "http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#" >
     <!ENTITY Fx-turtle "http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application&#37;2Fx-turtle#" >
@@ -18,9 +19,11 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:Fx-turtle="http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#">
+     xmlns:om-1="http://www.wurvoc.org/vocabularies/om-1.8/"
+     xmlns:Fx-turtle="&om-1;?exportFormat=application%2Fx-turtle#">
     <owl:Ontology rdf:about="http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl">
         <rdfs:comment>The Spectrum Sensing Experiment Specification ontology describes all aspects of configuring and running a spectrum sensing experiment. The ontology is based on the CREW Common data Format.</rdfs:comment>
+        <owl:imports rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/"/>
     </owl:Ontology>
     
 
@@ -213,7 +216,7 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#numericalValue -->
 
-    <owl:DatatypeProperty rdf:about="&Fx-turtle;numericalValue"/>
+    <owl:DatatypeProperty rdf:about="&om-1;?exportFormat=application%2Fx-turtle#numericalValue"/>
     
 
 
@@ -484,36 +487,54 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#1MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;1MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#1MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>1</Fx-turtle:numericalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#1_MHz_band -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#1_MHz_band">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+        <hasBandwidth rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#1MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#20MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;20MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#20MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>20</Fx-turtle:numericalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#20_MHz_band -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#20_MHz_band">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+        <hasBandwidth rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#20MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#2402-2478MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;2402-2478MHz">
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#2402-2478MHz">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
-        <startsAt rdf:resource="&Fx-turtle;2402MHz"/>
-        <endsAt rdf:resource="&Fx-turtle;2478MHz"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#2402MHz"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#2478MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#2402MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;2402MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#2402MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>2402</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -521,8 +542,8 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#2478MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;2478MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#2478MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>2478</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -530,27 +551,36 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#2MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;2MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#2MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>2</Fx-turtle:numericalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#2_MHz_band -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#2_MHz_band">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+        <hasBandwidth rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#2MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5180-5320MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5180-5320MHz">
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5180-5320MHz">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
-        <startsAt rdf:resource="&Fx-turtle;5180MHz"/>
-        <endsAt rdf:resource="&Fx-turtle;5320MHz"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5180MHz"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5320MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5180MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5180MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5180MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5180</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -558,8 +588,8 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5320MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5320MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5320MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5320</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -567,18 +597,18 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5500-5700MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5500-5700MHz">
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5500-5700MHz">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
-        <startsAt rdf:resource="&Fx-turtle;5500MHz"/>
-        <endsAt rdf:resource="&Fx-turtle;5700MHz"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5500MHz"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5700MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5500MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5500MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5500MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5500</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -586,8 +616,8 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5700MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5700MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5700MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5700</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -595,18 +625,18 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5745-5805MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5745-5805MHz">
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5745-5805MHz">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
-        <startsAt rdf:resource="&Fx-turtle;5745MHz"/>
-        <endsAt rdf:resource="&Fx-turtle;5805MHz"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5745MHz"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5805MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5745MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5745MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5745MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5745</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -614,8 +644,8 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5805MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5805MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5805MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5805</Fx-turtle:numericalValue>
     </owl:NamedIndividual>
     
@@ -623,18 +653,176 @@
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5MHz -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;5MHz">
-        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
         <Fx-turtle:numericalValue>5</Fx-turtle:numericalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#5_MHz_band -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#5_MHz_band">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+        <hasBandwidth rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_2402_MHz_fStart -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_2402_MHz_fStart">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#2402MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_2478_MHz_fEnd -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_2478_MHz_fEnd">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#2478MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_5180_MHz_fStart -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5180_MHz_fStart">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5180MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_5320_MHz_fEnd -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5320_MHz_fEnd">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5320MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_5500_MHz_fStart -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5500_MHz_fStart">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5500MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_5700_MHz_fEnd -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5700_MHz_fEnd">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5700MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_5745_MHz_fStart -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5745_MHz_fStart">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;StartFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5745MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_5805_MHz_fEnd -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5805_MHz_fEnd">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;EndFrequency"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5805MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_band1 -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band1">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_2402_MHz_fStart"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_2478_MHz_fEnd"/>
+        <steps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_step1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_band2 -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band2">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5180_MHz_fStart"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5320_MHz_fEnd"/>
+        <steps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEX_WARP_step2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_band3 -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band3">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5500_MHz_fStart"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5700_MHz_fEnd"/>
+        <steps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEX_WARP_step2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_band4 -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band4">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5745_MHz_fStart"/>
+        <endsAt rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_5805_MHz_fEnd"/>
+        <steps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEX_WARP_step2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_range -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_range">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;BaseBandFrequencyBand"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#1MHz"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#20MHz"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#2MHz"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEC_WARP_step1 -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_step1">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyStep"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#1_MHz_band"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#IMEX_WARP_step2 -->
+
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#IMEX_WARP_step2">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;FrequencyStep"/>
+        <om-1:value rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#5MHz"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.wurvoc.org/vocabularies/om-1.8/?exportFormat=application%2Fx-turtle#Imec_sensing_engine_WARP -->
 
-    <owl:NamedIndividual rdf:about="&Fx-turtle;Imec_sensing_engine_WARP">
+    <owl:NamedIndividual rdf:about="&om-1;?exportFormat=application%2Fx-turtle#Imec_sensing_engine_WARP">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;RadioDevice"/>
-        <sweeps rdf:resource="&Fx-turtle;2402-2478MHz"/>
+        <sweeps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band1"/>
+        <sweeps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band2"/>
+        <sweeps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band3"/>
+        <sweeps rdf:resource="&om-1;?exportFormat=application%2Fx-turtle#IMEC_WARP_band4"/>
     </owl:NamedIndividual>
     
 
