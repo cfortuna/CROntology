@@ -570,9 +570,9 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;1700KHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;1700KHz"/>
-        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;1700KHz"/>
         <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;1700KHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;1700KHz"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;1700KHz"/>
     </owl:NamedIndividual>
     
 
@@ -591,9 +591,9 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;1MHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;1MHz"/>
-        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;1MHz"/>
         <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;1MHz"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;1MHz"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;1MHz"/>
     </owl:NamedIndividual>
     
 
@@ -612,9 +612,9 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;20MHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;20MHz"/>
-        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;20MHz"/>
         <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;20MHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;20MHz"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;20MHz"/>
     </owl:NamedIndividual>
     
 
@@ -625,6 +625,16 @@
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
         <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;2400MHz"/>
         <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;2485MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2400-2500MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2400-2500MHz">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;2400MHz"/>
+        <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;2500MHz"/>
     </owl:NamedIndividual>
     
 
@@ -679,6 +689,16 @@
     
 
 
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2412-2482MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2412-2482MHz">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;2412MHz"/>
+        <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;2482MHz"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2412MHz -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2412MHz">
@@ -719,12 +739,22 @@
     
 
 
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2482MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2482MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>2482</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2484-2484MHz -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2484-2484MHz">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
-        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;2484MHz"/>
         <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;2484MHz"/>
+        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;2484MHz"/>
     </owl:NamedIndividual>
     
 
@@ -744,6 +774,16 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2485MHz">
         <rdf:type rdf:resource="&om-1;Measure"/>
         <numericalValue rdf:datatype="&xsd;integer">2485</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2500MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2500MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>2500</numericalValue>
         <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
     </owl:NamedIndividual>
     
@@ -783,9 +823,9 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2MHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;2MHz"/>
-        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;2MHz"/>
         <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;2MHz"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;2MHz"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;2MHz"/>
     </owl:NamedIndividual>
     
 
@@ -804,9 +844,30 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;406KHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;406KHz"/>
-        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;406KHz"/>
         <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;406KHz"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;406KHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;406KHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#40MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;40MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>40</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#40MHzBandwidth -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;40MHzBandwidth">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;40MHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;40MHz"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;40MHz"/>
     </owl:NamedIndividual>
     
 
@@ -831,6 +892,26 @@
     
 
 
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#4900-5350MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;4900-5350MHz">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;4900MHz"/>
+        <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;5350MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#4900MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;4900MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>4900</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#500MHz -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;500MHz">
@@ -846,8 +927,8 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;500MHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
         <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;1MHz"/>
-        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;500MHz"/>
         <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;500MHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;500MHz"/>
     </owl:NamedIndividual>
     
 
@@ -877,6 +958,36 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5320MHz">
         <rdf:type rdf:resource="&om-1;Measure"/>
         <numericalValue rdf:datatype="&xsd;integer">5320</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#5350MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5350MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>5350</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#5470-5875MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5470-5875MHz">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;5470MHz"/>
+        <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;5875MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#5470MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5470MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>5470</numericalValue>
         <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
     </owl:NamedIndividual>
     
@@ -942,6 +1053,16 @@
     
 
 
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#5875MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5875MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue>5875</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#5MHz -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5MHz">
@@ -956,8 +1077,8 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5MHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;5MHz"/>
         <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;5MHz"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;5MHz"/>
     </owl:NamedIndividual>
     
 
@@ -967,8 +1088,8 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;8000KHz">
         <rdf:type rdf:resource="&om-1;Measure"/>
         <numericalValue rdf:datatype="&xsd;integer">8000</numericalValue>
-        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;8000KHz"/>
         <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;8000KHz"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;8000KHz"/>
         <om-1:unit_of_measure rdf:resource="&om-1;kilohertz"/>
     </owl:NamedIndividual>
     
@@ -997,9 +1118,9 @@
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;812KHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
-        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;812KHz"/>
-        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;812KHz"/>
         <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;812KHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;812KHz"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;812KHz"/>
     </owl:NamedIndividual>
     
 
@@ -1157,8 +1278,8 @@
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#SASettings -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;SASettings">
-        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;2Hz-8GHz"/>
         <steps rdf:resource="&SpectrumSensingExperimentSpecification;2Hz-8GHz"/>
+        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;2Hz-8GHz"/>
         <withBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;500MHz"/>
     </owl:NamedIndividual>
     
@@ -1207,6 +1328,48 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;VESNASettings2">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
         <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;470-862MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#WARP -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;WARP">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;RadioDevice"/>
+        <supports rdf:resource="&SpectrumSensingExperimentSpecification;WARPSettings1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#WARPSettings1 -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;WARPSettings1">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
+        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;2412-2482MHz"/>
+        <withBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;40MHzBandwidth"/>
+        <steps rdf:resource="&SpectrumSensingExperimentSpecification;5MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#WARP_WIP -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;WARP_WIP">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;RadioDevice"/>
+        <supports rdf:resource="&SpectrumSensingExperimentSpecification;WARP_WIPSettings1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#WARP_WIPSettings1 -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;WARP_WIPSettings1">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
+        <withBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;20MHzBandwidth"/>
+        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;2400-2500MHz"/>
+        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;4900-5350MHz"/>
+        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;5470-5875MHz"/>
+        <steps rdf:resource="&SpectrumSensingExperimentSpecification;5MHz"/>
     </owl:NamedIndividual>
     
 
@@ -1270,20 +1433,6 @@
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;sameBand"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#B1"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#B2"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -1311,14 +1460,6 @@
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="&swrl;AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;endsAt"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#B2"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#f4"/>
-                                            </rdf:Description>
-                                        </rdf:first>
                                         <rdf:rest>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -1366,22 +1507,28 @@
                                                                         <rdf:rest>
                                                                             <rdf:Description>
                                                                                 <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;numericalValue"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#f3"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
                                                                                 <rdf:rest>
                                                                                     <rdf:Description>
                                                                                         <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;numericalValue"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#f4"/>
+                                                                                                <swrl:argument2 rdf:resource="urn:swrl#t"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
                                                                                         <rdf:rest>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="&swrl;AtomList"/>
-                                                                                                <rdf:first>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
-                                                                                                        <swrl:builtin rdf:resource="&swrlb;equal"/>
-                                                                                                        <swrl:arguments rdf:parseType="Collection">
-                                                                                                            <rdf:Description rdf:about="urn:swrl#x"/>
-                                                                                                            <rdf:Description rdf:about="urn:swrl#z"/>
-                                                                                                        </swrl:arguments>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:first>
                                                                                                 <rdf:rest>
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -1398,26 +1545,20 @@
                                                                                                         </rdf:first>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:rest>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                                                                        <swrl:builtin rdf:resource="&swrlb;equal"/>
+                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                            <rdf:Description rdf:about="urn:swrl#x"/>
+                                                                                                            <rdf:Description rdf:about="urn:swrl#z"/>
+                                                                                                        </swrl:arguments>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
                                                                                             </rdf:Description>
                                                                                         </rdf:rest>
-                                                                                        <rdf:first>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;numericalValue"/>
-                                                                                                <swrl:argument1 rdf:resource="urn:swrl#f4"/>
-                                                                                                <swrl:argument2 rdf:resource="urn:swrl#t"/>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:first>
                                                                                     </rdf:Description>
                                                                                 </rdf:rest>
-                                                                                <rdf:first>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
-                                                                                        <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;numericalValue"/>
-                                                                                        <swrl:argument1 rdf:resource="urn:swrl#f3"/>
-                                                                                        <swrl:argument2 rdf:resource="urn:swrl#z"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:first>
                                                                             </rdf:Description>
                                                                         </rdf:rest>
                                                                     </rdf:Description>
@@ -1428,6 +1569,14 @@
                                                 </rdf:rest>
                                             </rdf:Description>
                                         </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;endsAt"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#B2"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#f4"/>
+                                            </rdf:Description>
+                                        </rdf:first>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
@@ -1443,6 +1592,20 @@
                 </rdf:rest>
             </rdf:Description>
         </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&SpectrumSensingExperimentSpecification;sameBand"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#B1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#B2"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
