@@ -629,6 +629,16 @@
     
 
 
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2400-2495MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2400-2495MHz">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;AntennaFrequencyBand"/>
+        <startsAt rdf:resource="&SpectrumSensingExperimentSpecification;2400MHz"/>
+        <endsAt rdf:resource="&SpectrumSensingExperimentSpecification;2495MHz"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2400-2500MHz -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2400-2500MHz">
@@ -774,6 +784,16 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2485MHz">
         <rdf:type rdf:resource="&om-1;Measure"/>
         <numericalValue rdf:datatype="&xsd;integer">2485</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#2495MHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;2495MHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue rdf:datatype="&xsd;integer">2495</numericalValue>
         <om-1:unit_of_measure rdf:resource="&om-1;megahertz"/>
     </owl:NamedIndividual>
     
@@ -1043,6 +1063,27 @@
     
 
 
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#58.036-812.5KHzBandwidth -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;58.036-812.5KHzBandwidth">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
+        <lowestValue rdf:resource="&SpectrumSensingExperimentSpecification;58.036KHz"/>
+        <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;812.5KHz"/>
+        <highestValue rdf:resource="&SpectrumSensingExperimentSpecification;812.5KHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#58.036KHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;58.036KHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue rdf:datatype="&xsd;double">58.036</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;kilohertz"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#5805MHz -->
 
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;5805MHz">
@@ -1100,6 +1141,16 @@
     <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;8000KHzBandwidth">
         <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;InputFilterBandwidth"/>
         <hasBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;8000KHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#812.5KHz -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;812.5KHz">
+        <rdf:type rdf:resource="&om-1;Measure"/>
+        <numericalValue rdf:datatype="&xsd;double">812.5</numericalValue>
+        <om-1:unit_of_measure rdf:resource="&om-1;kilohertz"/>
     </owl:NamedIndividual>
     
 
@@ -1370,6 +1421,25 @@
         <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;4900-5350MHz"/>
         <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;5470-5875MHz"/>
         <steps rdf:resource="&SpectrumSensingExperimentSpecification;5MHz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#WiSpy2.4x -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;WiSpy2.4x">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;RadioDevice"/>
+        <supports rdf:resource="&SpectrumSensingExperimentSpecification;WiSpySettings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sensorlab.ijs.si/2013/v0/SpectrumSensingExperimentSpecification.owl#WiSpySettings -->
+
+    <owl:NamedIndividual rdf:about="&SpectrumSensingExperimentSpecification;WiSpySettings">
+        <rdf:type rdf:resource="&SpectrumSensingExperimentSpecification;Setting"/>
+        <sweeps rdf:resource="&SpectrumSensingExperimentSpecification;2400-2495MHz"/>
+        <withBandwidth rdf:resource="&SpectrumSensingExperimentSpecification;58.036-812.5KHzBandwidth"/>
     </owl:NamedIndividual>
     
 
